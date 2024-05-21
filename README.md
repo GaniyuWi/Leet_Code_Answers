@@ -1,10 +1,13 @@
-#LeetCode Solutions
+#**LeetCode Solutions**
+
 This repository is meant to document all the LeetCode questions I solve starting from May 2024. I use C# to solve all questions, and I usually run the solutions on Visual Studio, but you can also use VS Code.
 
-#Repository Structure
+#**Repository Structure**
+
 Leet_Code_Testing: Each class file in this folder contains a different LeetCode question and its answer. These can be called in the Program.cs file.
 
-#How to Use
+#**How to Use**
+
 Clone the Repository:
 
 ```bash
@@ -16,20 +19,17 @@ You can open the project in Visual Studio or VS Code.
 Run the Solutions:
 
 Navigate to the Program.cs file and call the respective class/method to test the solution.
+
 Example
-Here’s an example of how to call a solution from the Program.cs file:
+The solutions are all in methods in static classes, so to call them you do not need to create an object. Here’s an example of how to call a solution from the Program.cs file:
 
 ```C#
 using Leet_Code_Testing;
 
 class Program
 {
-    static void Main(string[] args)
-    {
-        var solution = new SolutionClass();
-        var result = solution.SolutionMethod();
+   var result = SolutionClass.SolutionMethod();
         Console.WriteLine(result);
-    }
 }
 ```
 
